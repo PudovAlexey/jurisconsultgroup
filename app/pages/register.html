@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Nunito+Sans&display=swap"
+        rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>jurisconsultgroup</title>
+</head>
+
+<body>
+
+    @@include('./header.html', {
+        "Register": "menu__link--active"
+    })
+
+    <main class="main blocks">
+        <div class="container container-middle">
+        <section class="middle-menu blocks" style="background-image: url(./images/bg/reviews.jpg);">
+                <h2 class="middle-menu__title">
+                    Register
+                </h2>
+
+                <div class="bread-crumbs">
+                    <a href="index.html" class="bread-crumbs__item bread-crumbs__item--home">
+                        <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                             width="16px" height="16px">
+                            <path fill-rule="evenodd"  fill="rgb(114, 114, 114)"
+                             d="M7.999,-0.001 L0.228,6.857 C-0.040,7.095 -0.069,7.508 0.164,7.782 L0.164,7.782 C0.398,8.055 0.805,8.084 1.073,7.847 L1.360,7.594 L1.360,14.034 C1.360,15.119 2.226,15.999 3.294,15.999 L6.903,15.999 L6.903,10.725 C6.903,10.093 7.408,9.579 8.031,9.579 L8.031,9.579 C8.654,9.579 9.159,10.093 9.159,10.725 L9.159,15.999 L12.704,15.999 C13.772,15.999 14.638,15.119 14.638,14.034 L14.638,7.594 L14.924,7.847 C15.193,8.084 15.600,8.055 15.833,7.782 L15.833,7.782 C16.067,7.508 16.038,7.095 15.769,6.857 L7.999,-0.001 ZM13.349,14.034 C13.349,14.396 13.060,14.689 12.704,14.689 L10.448,14.689 L10.448,10.725 C10.448,9.369 9.366,8.269 8.031,8.269 L8.031,8.269 C6.696,8.269 5.614,9.369 5.614,10.725 L5.614,14.689 L3.294,14.689 C2.938,14.689 2.649,14.396 2.649,14.034 L2.649,6.456 L7.999,1.734 L13.349,6.456 L13.349,14.034 Z"/>
+                        </svg>
+                        Home
+                    </a>
+                    <span class="bread-crumbs__item">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="9px" height="10px">
+                            <path fill-rule="evenodd"  fill="rgb(114, 114, 114)"
+                            d="M8.907,5.228 L4.569,9.889 C4.507,9.956 4.436,9.989 4.355,9.989 C4.275,9.989 4.203,9.956 4.141,9.889 L3.675,9.389 C3.613,9.322 3.583,9.245 3.583,9.159 C3.583,9.072 3.613,8.996 3.675,8.929 L7.334,4.999 L3.675,1.068 C3.613,1.002 3.583,0.925 3.583,0.838 C3.583,0.752 3.613,0.675 3.675,0.608 L4.141,0.108 C4.203,0.042 4.275,0.008 4.355,0.008 C4.436,0.008 4.507,0.042 4.569,0.108 L8.907,4.768 C8.969,4.835 8.999,4.912 8.999,4.999 C8.999,5.086 8.969,5.162 8.907,5.228 ZM5.425,4.999 C5.425,5.086 5.395,5.162 5.332,5.228 L0.995,9.889 C0.932,9.956 0.861,9.989 0.781,9.989 C0.700,9.989 0.629,9.956 0.567,9.889 L0.101,9.389 C0.040,9.322 0.008,9.245 0.008,9.159 C0.008,9.072 0.040,8.996 0.101,8.929 L3.759,4.999 L0.101,1.068 C0.040,1.002 0.008,0.925 0.008,0.838 C0.008,0.752 0.040,0.675 0.101,0.608 L0.567,0.108 C0.629,0.042 0.700,0.008 0.781,0.008 C0.861,0.008 0.932,0.042 0.995,0.108 L5.332,4.768 C5.395,4.835 5.425,4.912 5.425,4.999 Z"/>
+                            </svg>
+                    </span>
+                    <a href="register.html" class="bread-crumbs__item bread-crumbs__item--current">
+                        Register
+                    </a>
+                </div>
+        </section>
+
+        <div class="form-log__items">
+                <button class="form-log__item form-log__item--active">
+                    Register
+                </button>
+                <button class="form-log__item">
+                    Login
+                </button>
+            </div>
+
+            <div class="form-logs">
+            
+        <form action="#" class="form-log form-log--register form-log__is-active">
+            
+            <label for="email" class="form-log__name">
+                Username or email address*
+            </label>
+            <input type="text" name="username" class="form-log__inp">
+            <label for="password" class="form-log__name">
+                Password*
+            </label>
+            <input type="password" name="pass" class="form-log__inp">
+
+            <span class="form-log__text">
+                A password will be sent to your email address.
+            </span>
+
+            <p class="form-log__text">
+
+                Your personal data will be used to support your experience throughout this website, to manage access to
+                your account, and for other purposes described in our privacy policy.
+            </p>
+
+            <div class="radio" id="radio-button">
+                <span class="radio__square">
+                </span>
+                <span class="radio__text">
+                    Agree with Terms & Conditions
+                </span>
+            </div>
+
+            <button type="submit" class="form-log__button">
+                Register
+            </button>
+        </form>
+
+        <form class="form-log form-log--login" id="form-login">
+
+            <label for="email"  class="form-log__name">
+                Username or email address*
+            </label>
+
+            <input type="text" name="username" class="form-log__inp" id="email" required>
+
+            <label  for="password" class="form-log__name">
+                Password*
+            </label>
+
+            <input type="password" name="pass" class="form-log__inp" id="pass" required>
+
+
+            <div class="radio" id="radio-button">
+                <span class="radio__square">
+                </span>
+                <span class="radio__text">
+                    Agree with Terms & Conditions
+                </span>
+            </div>
+
+            <button type="submit" class="form-log__button" id='submit-login'>
+                Log in
+            </button>
+
+            <a href ="error.html" class="form-log__text form-log__text--pass">
+                Lost your password?
+            </a>
+        </form>
+    </div>
+        </div>
+    </main>
+
+    @@include('./footer.html')
+    <script src="./js/main.min2.js"></script>
+</body>
+
+</html>

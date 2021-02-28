@@ -1,0 +1,48 @@
+{
+    "name": "start-gulp",
+    "version": "1.0.0",
+    "description": "first gulp",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Alex Pudov",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.12.13",
+        "@babel/preset-env": "^7.12.13",
+        "babel-loader": "^8.2.2",
+        "babel-plugin-root-import": "^6.6.0",
+        "browser-sync": "^2.26.13",
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-babel": "^8.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-file-include": "^2.3.0",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-strip-import-export": "^1.0.0",
+        "gulp-uglify": "^3.0.2",
+        "webpack": "^5.21.2",
+        "webpack-stream": "^6.1.2"
+    },
+    "dependencies": {
+        "-": "0.0.1",
+        "babel-plugin-uglify": "^1.0.2",
+        "firebase": "^8.2.7",
+        "firebaseui": "^4.7.3",
+        "gulp-typescript": "^6.0.0-alpha.1",
+        "jquery": "^3.5.1",
+        "js-plugin-circliful": "^2.0.15",
+        "mapbox-gl": "^2.1.0",
+        "popper.js": "^1.16.1",
+        "redux": "^4.0.5",
+        "redux-devtools-extension": "^2.13.8",
+        "redux-logger": "^3.0.6",
+        "request": "^2.88.2",
+        "rollup": "^2.38.5",
+        "slick-carousel": "^1.8.1",
+        "typescript": "^4.1.3"
+    }
+}

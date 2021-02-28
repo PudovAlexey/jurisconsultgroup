@@ -1,0 +1,19 @@
+$maingold: #D4B973;
+$mainfont: 'Montserrat';
+$tablefont: 'Nunito Sans';
+$bg: #f6f6f6;
+
+
+%button {
+    font-size: 21px;
+line-height: 36px;
+text-align: center;
+padding: 12px 26px;
+color: #fff;
+text-decoration: none;
+background-color: $maingold;
+background: linear-gradient(180deg, #C9AD64 3.65%, #E5C583 39.57%, #E5C583 39.58%, #E7CB91 85.94%, #FFD47C 100%);
+border-radius: 10px;
+color: #000;
+border: none;
+}

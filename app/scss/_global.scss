@@ -1,0 +1,188 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 16px;
+    color: #000;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.title {
+    margin: 0 auto;
+    font-size: 48px;
+    line-height: 59px;
+    color: #1C1A1A;
+    padding: 0px 10px 20px;
+    display: block;
+    z-index: 100;
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
+    width: fit-content;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        right: 0px;
+        bottom: 10px;
+        border-bottom: 3px solid #D4B973;
+    }
+
+
+    &--white {
+        color: #fff;
+    }
+}
+
+.blocks {
+    padding: 90px 0;
+}
+
+.slick-long-arrow {
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+
+    &--left {
+        left: 0;
+        transform: rotate(180deg);
+
+        &::before {
+            content: url('data:image/svg+xml; utf8, <svg width="205" height="2" viewBox="0 0 205 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.9" d="M0 1L205 1" stroke="white" stroke-width="2"/></svg>');
+            margin-left: 9px;
+            position: relative;
+            bottom: 20px;
+        }
+    }
+
+    &--right {
+        right: 0;
+
+        &::before {
+            content: url('data:image/svg+xml; utf8, <svg width="205" height="2" viewBox="0 0 205 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.9" d="M0 1L205 1" stroke="white" stroke-width="2"/></svg>');
+            margin-right: 9px;
+        }
+    }
+
+    &.slick-disabled {
+        display: none !important;
+      }
+
+      &--black {
+          & svg path {
+            stroke: #000;
+        }
+        &::before {
+            content: url('data:image/svg+xml; utf8, <svg width="205" height="2" viewBox="0 0 205 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.9" d="M0 1L205 1" stroke="black" stroke-width="2"/></svg>');
+        }
+      }
+}
+
+.scrolledmenu {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 1000;
+    cursor: pointer;
+    transform: translateY(-1000%);
+    transition: transform ease .5s;
+
+    &__active {
+        transform: translateY(0%);
+    }
+
+    & svg {
+        z-index: 100;
+    }
+}
+
+.modal {
+    background-color: #fff;
+    width: 705%;;
+    top: -50px;
+    min-height: 34vh;
+    width: 300px;
+    right: -31px;
+    height: 100vh;
+    left: -225px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateX(1000%);
+    transition: transform ease .5s;
+    z-index: -1;
+
+    &__wrap {
+        position: absolute;
+        right: -50px;
+        top: -50px;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: -2;
+        display: none;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end;
+        position: fixed;
+        top: 100px;
+        right: 20px;
+    }
+
+    .header__menu-link  {
+        color: black;
+        color: black;
+        margin-top: 20px;
+        font-size: 22px;
+    }
+
+    &--active {
+        transform: translateX(0%);
+
+        & + div {
+            display: block;
+        }
+
+        body {
+            overflow: hidden;
+        }
+    }
+}
+
+.marker {
+    width: 20px;
+    height: 20px;
+    display: block;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+
+    &::before {
+        content: "Метро ясенево";
+        color: #fff;
+        font-size: 16px;
+        position: absolute;
+        top: -40px;
+    }
+}

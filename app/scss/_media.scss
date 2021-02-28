@@ -1,0 +1,265 @@
+@media (max-width: 1200px) {
+
+    .header {
+        background-position: 69%;
+        &__slick .slick-dots {
+            right: 0%;
+        }
+
+        &__telephone {
+        position: absolute;
+        top: 65%;
+        right: 7%;
+        }
+    }
+
+    .footer {
+        &__menu-item {
+            display: none;
+        }
+
+        &__menu {
+            justify-content: center;
+        }
+    }
+
+}
+
+@media (max-width: 880px) {
+    .header {
+
+        &__logo {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+        &__logo-item--name {
+            border-left: none;
+
+        }
+
+        &__text-description {
+            max-width: 65%;
+            margin-top: 30px;
+            margin-bottom: 43px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        &__telephone {
+            display: none;
+        }
+
+        &__slick .slick-dots li {
+            padding: 22px 9px;
+            width: 223px;
+            height: 107px;
+        }
+    } 
+
+    .statistics {
+        &__name {
+            font-size: 19px;
+            line-height: 26px;
+        }
+    }
+
+    .law {
+        position: relative;
+        &__table {
+            padding: 17px 15px 9px 13px;
+            overflow-x: scroll;
+        }
+
+        &__search {
+            position: absolute;
+            left: 0;
+            transform: translateX(-100%);
+            transition: transform ease .5s;
+
+            &--active {
+                transform: translateX(0px);
+            }
+        }
+
+        &__mobule-filter {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 100;
+            transform: translateX(0px) rotate(0deg);
+            transition: transform ease .5s;
+            z-index: 100;
+
+            &--active {
+                transform: translateX(180px) rotate(180deg);
+            }
+
+            & svg {
+                max-width: 20px;
+                font-weight: 900;
+                z-index: 1000;
+            }
+        }
+    }
+
+    .contact {
+        span, 
+        a {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        &__menu {
+            display: none;
+        }
+
+        &__text-description {
+            max-width: 100%;
+        }
+
+        &__name {
+            font-size: 33px;
+            line-height: 45px;
+        }
+
+        &__slick .slick-dots {
+            display: none !important;
+        }
+
+    }
+
+    .about {
+        &__slick-item {
+            font-size: 16px;
+            line-height: 22px;
+            padding: 45px 12px;
+        }
+
+        &__decoration {
+            max-width: 560px;
+        }
+    }
+
+    .law {
+        &__table-list {
+            overflow-x: scroll;
+        }
+    }
+
+    .services {
+        &__item {
+            font-size: 18px;
+            line-height: 25px;
+            width: 320px;
+            height: 240px;
+
+            &--description {
+                font-size: 12px;
+            line-height: 18px;
+            }
+        }
+    }
+
+    .statistics {
+        &__items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            grid-column-gap: 30px;
+            max-width: 100%;
+            position: relative;
+            left: 5%;
+        
+        }
+    }
+
+    .services {
+       & &__item-box {
+            justify-content: center;
+        }
+    }
+
+    .team {
+
+        &__item {
+            flex-direction: column;
+        }
+
+        &__status {
+            font-size: 30px;
+            line-height: 35px;
+        }
+        &__education-gov {
+            display: none;
+        }
+
+        &__name {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 21px 8px 13px 18px;
+            font-weight: 500;
+            font-size: 17px;
+            bottom: 46%;
+        }
+
+        &__img {
+            max-height: 400px;
+            max-width: 400px;
+        }
+
+        &__sescr {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    .reviews {
+
+        &__text {
+            font-size: 14px;
+        line-height: 18px;
+        }
+
+        &__name {
+            font-size: 20px;
+        line-height: 18px;
+        }
+    }
+
+    .form {
+        &__title {
+            margin-bottom: 26px;
+            font-size: 23px;
+            line-height: 30px; 
+        }
+
+        &__input {
+            padding: 8px 25px;
+
+            &--textarea {
+                max-width: 260px;
+            }
+        }
+    }
+
+    .contact {
+        &__blocks {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        &__map-wrap {
+            display: none;
+        }
+    }
+}
